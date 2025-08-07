@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<link rel="stylesheet" href="ym.css">
+<title>음악 스트리밍 서비스 상세 보기</title>
+</head>
+<body>
+
+    <a href="../index.html" class="back">&larr; 메인으로 돌아가기</a>
+    <h1>음악 스트리밍 서비스 상세 기능 보기</h1>
+    <p class="intro">
+        이 프로젝트는 개인 서버에 호스팅 가능한 오픈소스 음악 스트리밍 서비스를 개발하는 것을 목표로 하며,
+        음악 파일의 수집, 관리, 재생까지 모두 통합된 환경을 제공합니다.<br />
+        사용자 개인의 서버에서 독립적으로 동작하기 때문에 사용자의 개인 정보 보호와 음원의 영구적인 소장을 보장하며, 
+        Docker를 활용한 배포로 언제 어디서나 자유롭게 음악을 감상할 수 있도록 구성하였습니다.<br />
+    </p>
+
+    <div class="all-pages">
+
+        <section class="page">
+        <h2>음악 정보 관리</h2>
+        <img src="./ym_asset/업로드.png" alt="음악 정보 수정 화면 예시" />
+        <p>사용자가 음원 제목, 가수, 앨범 정보 등 음악 메타데이터를 자유롭게 수정하여 라이브러리에 음원을 업로드</p>
+        <p>혹은 음원의 링크를 가져오면 자동으로 메타테이터를 추출 해 음원을 업로드</p>
+        <p class="contribution">내 기여: 음악 정보 관리 페이지 디자인 및 음원 다운 시 프로그레스 바 </p>
+        </section>
+
+        <section class="page">
+        <h2>앨범 및 앨범 아트 관리</h2>
+        <img src="./ym_asset/앨범.png" alt="앨범 생성 및 아트 추가 화면" />
+        <p>음원 업로드 시 해당 음원의 메타데이터를 통해 자동으로 그룹별 앨범을 생성하고, 각 앨범별 관리 및 앨범 내 음원 관리에 대한 CRUD </p>
+        <p class="contribution">내 기여: 앨범 생성, 삭제, 앨범 내 음원 삭제, 수정, 좋아요 여부, 메타데이터 내 앨범아트 불러오기</p>
+        </section>
+
+        <section class="page">
+        <h2>플레이리스트</h2>
+        <img src="./ym_asset/플레이리스트.png" alt="재생 목록 화면" />
+        <p>최근 추가한 음악, 좋아요한 음악을 나타내며 자유롭게 플레이리스트를 생성하고 원하는 곡들을 추가하는 등 각 플레이리스트 별 CRUD기능 제공 및 플레이어와 연동</p>
+        <p class="contribution">내 기여: 해당 페이지 전체</p>
+        </section>
+
+        <section class="page">
+        <h2>음원 업로드 및 다운로드</h2>
+        <img src="./ym_asset/라이브러리.png"  />
+        <p>업로드 페이지에서 업로드 한 전체 음원 내역이 표시되며 해당 페이지 내부에서도 좋아요, 노래 정보 수정, 삭제 및 노래 재생이 가능</p>
+        <p class="contribution">내 기여: 전체적인 CSS 수정 및 노래 좋아요 여부 연동</p>
+        </section>
+
+        <section class="page">
+        <h2>플레이어</h2>
+        <img src="./ym_asset/플레이어.png"  />
+        <p>플레이리스트 노래 재생 및 반복, 반복 타입 지정, 현재 플레이리스트의 재생 목록 순서 드래그 앤 드롭으로 변경 및 노래 추가, 삭제</p>
+        <p class="contribution">내 기여: 해당 페이지 전체</p>
+        </section>
+
+    </div>
+</body>
+</html>

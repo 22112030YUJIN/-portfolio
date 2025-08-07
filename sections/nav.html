@@ -1,0 +1,27 @@
+<nav class="sticky top-0 z-50 bg-navy-900/80 backdrop-blur-md border-b border-accent/10">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="#home" class="text-xl font-bold text-accent flex items-center">
+      자기 소개
+    </a>
+    <div class="hidden md:flex space-x-8">
+      <a href="#home" class="nav-link active">홈</a>
+      <a href="#about" class="nav-link">소개</a>
+      <a href="#skills" class="nav-link">기술 스택</a>
+      <a href="#projects" class="nav-link">프로젝트</a>
+      <a href="#contact" class="nav-link">연락처</a>
+    </div>
+    <button id="mobile-menu-button" class="md:hidden focus:outline-none text-accent">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
+  </div>
+  <!-- 모바일 메뉴 -->
+  <div id="mobile-menu" class="hidden md:hidden bg-navy-800/95 backdrop-blur-md border-b border-accent/10">
+    <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+      <a href="#home" class="block py-2 nav-link active">홈</a>
+      <a href="#about" class="block py-2 nav-link">소개</a>
+      <a href="#skills" class="block py-2 nav-link">기술 스택</a>
+      <a href="#projects" class="block py-2 nav-link">프로젝트</a>
+      <a href="#contact" class="block py-2 nav-link">연락처</a>
+    </div>
+  </div>
+</nav>

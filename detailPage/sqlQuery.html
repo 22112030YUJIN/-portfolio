@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="sql.css">
+    <title>SQL 쿼리 시각화 IDE 상세 보기</title>
+    
+</head>
+<body>
+
+    <a href="../index.html" class="back">&larr; 목록으로 돌아가기</a>
+    <h1>SQL 쿼리 시각화 IDE 상세 보기</h1>
+    <p class="intro">
+        이 프로젝트는 SQL 쿼리 작성을 시각적으로 쉽게 할 수 있도록 도와주는 웹 기반 IDE입니다.<br />
+        DB 연결 관리, 프로젝트 멤버 초대 및 실시간 알림, 쿼리 작성/저장/공유, 채팅 등 협업 중심 기능을 제공하며,
+        사용자가 직접 쿼리를 실행하고 그 결과를 확인할 수 있는 구조로 설계되었습니다.<br />
+        직관적인 UI와 기능별 페이지 구성을 통해 협업과 쿼리 작업의 효율성을 극대화하는 것이 주요 목표입니다.
+    </p>
+
+  <!-- 데모 영상 -->
+    <video controls>
+        <source src="sqlQueryDemo.mp4" type="video/mp4" />
+        영상 지원하지 않는 브라우저입니다.
+    </video>
+
+    <div class="all-pages">
+        <section class="page">
+            <h2>마이페이지</h2>
+            <img src="./sql_asset/마이페이지.png" />
+            <p>사용자의 기본 프로필과 정규화식(대문자1, 소문자1, 숫자1, 특수문자1을 포함하는 10자리 이상) 맞춘 비밀번호 변경, 회원탈퇴 및 프로젝트 수신/발신 목록 조회 </p>
+            <p class="contribution">내 기여: 해당 페이지 전체</p>
+        </section>
+
+        <section class="page">
+            <h2>대시보드 </h2>
+            <img src="./sql_asset/대시보드.png"/>
+            <img src="./sql_asset/멤버초대.png"  />
+            <img src="./sql_asset/초대_수락_거절.png" />
+            <p>DB연결 프로젝트 생성 및 수정, 삭제 외 각 프로젝트 별 IDE편집을 위한 전체 프로젝트 내역</p>
+            <p class="contribution">내 기여: UI구현 일부 도움 및 수정, 
+                프로젝트 멤버 초대기능 및 초대 시 상대의 알람으로 보류중인 모든 알람을 불러와 초대 및 수락 시 해당 프로젝트 멤버 반영,
+                최근 프로젝트 열람</p>
+        </section>
+
+        <section class="page">
+            <h2>DB연결관리</h2>
+            <img src="./sql_asset/DB연결관리.png"/>
+            <img src="./sql_asset/DB연결관리_새연결추가.png" />
+            <p>DB연결 된 프로젝트는 UI로 사용자의 권한 및 연결상태를 제공하고, 연결 안된 프로젝트는 새 연결 추가를 통한 DB연결 </p>
+            <p class="contribution">내 기여: 전체 UI구현 및, DB연결 안 된 프로젝트 선택 시 DB연결 관리 기능 모달 창 연결(api 연결작업 제외)</p>
+        </section>
+        
+        <section class="page">
+            <h2>IDE</h2>
+            <img src="./sql_asset/IDE.png"/>
+            <img src="./sql_asset/IDE_언어변경.png"  />
+            <p>각 프로젝트 별 IDE 기능(api와 연결 실패)</p>
+            <p class="contribution">내 기여: 디자인 및 IDE 폴더 생성, 삭제, 이름 수정, 언어 변경</p>
+        </section>
+
+        <section class="page">
+            <h2>채팅</h2>
+            <img src="./sql_asset/채팅_기본.png" />
+            <img src="./sql_asset/채팅_내역.png" />
+            <p>프로젝트 별 그룹 채팅 및 초대된 프로젝트의 각 멤버들과 1:1 채팅방, 채팅 방 별 최근 대화 내역</p>
+            <p class="contribution">내 기여: 해당 페이지 전체</p>
+        </section>
+    </div>
+    </body>
+</html>
