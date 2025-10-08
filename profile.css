@@ -191,3 +191,14 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: rgba(100, 255, 218, 0.5);
         }
+
+        #footer-container, 
+        footer {
+            position: relative; 
+            z-index: 999;     
+
+        #footer-container a, 
+        footer a {
+            position: relative;
+            z-index: 1000;
+        }
