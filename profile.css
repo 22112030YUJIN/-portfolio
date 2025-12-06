@@ -195,7 +195,8 @@
         #footer-container, 
         footer {
             position: relative; 
-            z-index: 999;     
+            z-index: 999;  
+        }   
 
         #footer-container a, 
         footer a {
