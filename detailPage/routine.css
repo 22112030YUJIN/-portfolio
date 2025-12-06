@@ -88,23 +88,33 @@ section.page {
     margin: 20px 0;
 }
 
+.slider-images {
+    display: flex; 
+    width: 100%;
+
+}
+
+
 .slide {
     width: 100%;
     flex-shrink: 0; 
-    display: none;
+    display: none; 
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: contain; 
 }
+
 
 .slide.active {
     display: block;
 }
 
+
 .slider-dots {
     text-align: center;
     padding: 10px 0;
 }
+
 
 .dot {
     display: inline-block;
@@ -117,11 +127,11 @@ section.page {
     transition: background-color 0.3s;
 }
 
+
 .dot.active {
     background-color: #ffffff; 
     border: 1px solid #333; 
 }
-
 
 .prev, .next {
     cursor: pointer;

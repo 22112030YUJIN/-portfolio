@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<link rel="stylesheet" href="routine.css">
+<title>루틴잇(Routine-it) - 습관, 우리 같이 만들래?</title>
+</head>
+<body>
+
+    <a href="../index.html" class="back">&larr; 메인으로 돌아가기</a>
+    <h1>루틴잇 (Routine-it): 소셜 기반 루틴 관리 서비스</h1>
+    <p class="intro">
+        이 프로젝트는 기존 루틴 앱의 개인 중심적 한계를 극복하고, 사회적 지지와 소속감을 통해 습관 형성의 동기를 극대화하기 위해 개발되었습니다.<br />
+        개인 루틴과 그룹 루틴을 결합한 소셜 루틴 시스템을 핵심으로 하며, 실시간 상호작용(WebSocket 채팅)과 랭킹 요소를 도입하여 지속 가능한 습관 실천 환경을 조성합니다.
+    </p>
+
+    <div class="all-pages">
+        <section class="page">
+            <h2>홈 페이지: 오늘의 루틴 활동 대시보드</h2>
+            <div class="slider-container">
+                <div class="slider-images">
+                    <img class="slide active" src="./routine_asset/홈화면1.png" alt="홈 페이지 화면 이미지 1" />
+                    <img class="slide" src="./routine_asset/홈화면2.png" alt="홈 페이지 화면 이미지 2" />
+                </div>
+                <a class="prev" onclick="plusSlides(-1, this.closest('.slider-container'))">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.closest('.slider-container'))">&#10095;</a>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <p>
+                사용자가 서비스에 접속했을 때 가장 먼저 접하는 핵심 대시보드입니다. 
+                오늘 완료한 루틴 개수, 누적 점수, 출석일에 따른 등급 등 오늘의 활동 현황을 즉각적으로 보여줍니다. 
+                또, 오늘의 루틴 목록, 참여 중인 그룹 목록, 루틴 인증 사진을 피드 형식으로 제공하여 활발한 커뮤니티 활동을 유도합니다.<br/><br/>
+                핵심 기술:다수의 백엔드 API 데이터를 통합하여 단일 페이지에 렌더링하는 UI/UX 설계, 그룹 인증 사진 피드 컴포넌트 구현
+            </p>
+            <p class="contribution">
+                내 기여: 홈 페이지의 전체 UI/UX를 설계하고 구현하였으며, 해당 페이지의 피드백을 제공하는 역할을 담당했습니다.
+            </p>
+        </section>
+
+        
+
+        <section class="page">
+            <h2>루틴 페이지: 개인/그룹 루틴 생성 및 관리</h2>
+            <div class="slider-container">
+                <div class="slider-images">
+                    <img class="slide active" src="./routine_asset/루틴페이지.png" alt="개인/그룹 루틴 생성 폼 및 추천 루틴 화면 이미지" />
+                </div>
+                 <a class="prev" onclick="plusSlides(-1, this.closest('.slider-container'))">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.closest('.slider-container'))">&#10095;</a>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                </div>
+            </div>
+            <p>
+                루틴 생성 및 관리를 위한 페이지입니다. 개인 루틴과 그룹 루틴 탭으로 나뉘어 있으며, 사용자가 루틴 목표를 쉽게 추가할 수 있도록 추천 루틴 목록을 제공합니다.<br/>
+                특히, 개인 루틴을 추가할 때 루틴 일정을 카카오톡 캘린더에 자동으로 등록하도록 구현했습니다.<br/><br/>
+                핵심 기술: 탭 기반의 UI/UX 설계, 루틴 생성 폼 유효성 검사 및 데이터 처리, 추천 루틴 목록의 동적 렌더링, 카카오톡 캘린더 연동
+            </p>
+            <p class="contribution">
+                내 기여 : 루틴 페이지의 초기 UI/UX를 설계하고 구현하였으며, 관련 피드백을 제공하는 역할을 담당했습니다.
+            </p>
+        </section>
+
+        <section class="page">
+            <h2>그룹 관리 페이지: 커뮤니티 형성 및 운영</h2>
+            <div class="slider-container">
+                <div class="slider-images">
+                    <img class="slide active" src="./routine_asset/그룹페이지.png" alt="그룹 목록 화면 이미지" />
+                    <img class="slide" src="./routine_asset/그룹페이지_참여대기.png" alt="그룹 참여 대기 화면 이미지" />
+                    <img class="slide" src="./routine_asset/그룹상세.png" alt="그룹 상세 페이지 화면 이미지" />
+                    <img class="slide" src="./routine_asset/그룹승인관리.png" alt="그룹 상세 페이지 승인관리 이미지" />
+                </div>
+                <a class="prev" onclick="plusSlides(-1, this.closest('.slider-container'))">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.closest('.slider-container'))">&#10095;</a>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <p>
+                전체 그룹 목록과 내가 참여 중인 그룹 목록을 보여주며, 필요에 따라 리더의 승인 절차를 통해 가입할 수 있습니다. 
+                그룹 상세 페이지에서는 해당 그룹의 멤버 목록, 한 달간 랭킹 상위 3명의 순위와 활동 내역을 볼 수 있습니다.<br/>
+                리더 전용 기능으로 그룹 정보 편집, 루틴 및 그룹 참여 인증 승인/반려, 리더 위임, 그룹 삭제 기능을 위한 UI를 구현하여 그룹 운영을 지원합니다.<br/><br/>
+                핵심 기술: 동적 데이터(랭킹, 활동 내역)를 표시하는 상세 페이지 컴포넌트 구현, 리더 권한에 따른 UI 조건부 렌더링, 가입/승인 요청 프로세스의 프론트엔드 로직 설계
+            </p>
+            <p class="contribution">
+                내 기여: 그룹 목록 및 상세 페이지의 UI/UX를 구현하였으며, 리더 권한에 따라 편집 및 승인 버튼이 활성화되는 조건부 렌더링 로직 설계에 참여하는 등 해당 페이지의 모든 작업에 참여하였습니다.
+            </p>
+        </section>
+
+        <section class="page">
+            <h2>실시간 채팅 페이지: 그룹 커뮤니케이션</h2>
+            <div class="slider-container">
+                <div class="slider-images">
+                    <img class="slide active" src="./routine_asset/채팅페이지.png" alt="그룹 채팅 화면 이미지 1" />
+                    <img class="slide" src="./routine_asset/채팅페이지_의무.png" alt="그룹 채팅 화면 이미지 2" />
+                    <img class="slide" src="./routine_asset/루틴인증모달.png" alt="그룹 루틴 인증 모달" />
+                </div>
+                <a class="prev" onclick="plusSlides(-1, this.closest('.slider-container'))">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.closest('.slider-container'))">&#10095;</a>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <p>
+                그룹원 간의 실시간 대화를 위한 페이지입니다. WebSocket(STOMP)을 사용하여 안정적인 실시간 메시지 송수신 환경을 구축했습니다.<br/>
+                사용자는 채팅을 통해 대화를 나눌 수 있으며, 메시지에 대한 이모티콘 반응 기능을 통해 상호작용의 즐거움을 더했습니다. 
+                또한, 페이지 내에서 그룹 루틴 인증을 위한 버튼을 제공하여 루틴 실천과 커뮤니케이션이 동시에 이루어지도록 유도했습니다.<br/><br/>
+                핵심 기술: WebSocket 클라이언트 연결 및 실시간 메시지 렌더링, 과거 채팅 내역 불러오기, 각 채팅별 독자적인 이모티콘 반응, 인증 버튼을 통한 루틴 인증 모달 연동, 그룹 유형에 따른 랭킹 산정 로직
+            </p>
+            <p class="contribution">
+                내 기여: 채팅 관련 페이지의 UI/UX를 설계 및 구현했습니다. 
+                WebSocket 통신 클라이언트의 상태 관리와 메시지 목록의 효율적인 렌더링을 담당했으며, 
+                이모티콘 반응 기능과 그룹 구분에 따라 다른 인증 방식 제공 등 상호작용 기능을 구현했습니다.
+                그룹 유형에 따라 루틴 인증 시 랭킹 산정 방식을 다르게 처리하는 로직도 설계했습니다. 
+            </p>
+        </section>
+
+        <section class="page">
+            <h2>랭킹 페이지: 게이미피케이션 경쟁 시스템</h2>
+            <div class="slider-container">
+                <div class="slider-images">
+                    <img class="slide active" src="./routine_asset/개인랭킹.png" alt="개인별 랭킹 보드 화면 이미지" />
+                    <img class="slide" src="./routine_asset/그룹랭킹.png" alt="그룹별 랭킹 보드 화면 이미지" />
+                </div>
+                <a class="prev" onclick="plusSlides(-1, this.closest('.slider-container'))">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.closest('.slider-container'))">&#10095;</a>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            <p>
+                루틴 실천 동기 부여를 위한 핵심 페이지입니다. 
+                월간 개인별 전체 랭킹과 그룹별 전체 랭킹을 구분하여 보여줍니다.<br/>
+                사용자가 본인의 순위를 쉽게 인식할 수 있도록 본인이 속한 랭킹 줄에는 포인트 색상을 적용했습니다. 
+                랭킹 데이터의 효율적인 표시와 시각적 효과를 통해 사용자 간의 선의의 경쟁을 유도합니다.<br/><br/>
+                핵심 기술: 개인/그룹 랭킹을 전환하는 UI 구현, 랭킹 데이터의 효율적인 목록 렌더링, 본인 순위에 대한 조건부 스타일링 로직 구현
+            </p>
+            <p class="contribution">
+                내 기여: 랭킹 페이지의 전체 UI/UX와 개인/그룹 랭킹을 전환 및 표기하는 인터페이스를 구현했습니다. 
+            </p>
+        </section>
+
+        <section class="page">
+            <h2>마이페이지: 활동 통계 및 개인 설정</h2>
+            <div class="slider-container">
+                <div class="slider-images">
+                    <img class="slide active" src="./routine_asset/마이페이지.png" alt="마이페이지 달력 및 활동 통계 화면 이미지" />
+                </div>
+                 <a class="prev" onclick="plusSlides(-1, this.closest('.slider-container'))">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, this.closest('.slider-container'))">&#10095;</a>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                </div>
+            </div>
+            <p>
+                사용자의 루틴 실천 기록을 장기적인 관점에서 확인하고 개인 설정을 관리하는 페이지입니다. 달력을 통해 한 달간의 출석 현황을 시각적으로 제공하며, 총 활동일, 완료한 루틴 개수, 누적 점수, 최대 연속 출석일 등의 상세 활동 통계를 보여줍니다.<br/><br/>
+                카카오 OAuth 2.0 연동을 통해 로그인 시 카카오톡 프로필 사진 및 이름을 자동으로 불러와 프로필 설정에 활용했습니다.<br/><br/>
+                핵심 기술: React 기반 달력 컴포넌트 구현 및 출석 데이터 시각화, 통계 데이터의 가독성 높은 UI 설계, 카카오 API 연동 데이터의 마이페이지 프로필 바인딩
+            </p>
+            <p class="contribution">
+                내 기여: 마이 페이지의 초기 UI/UX를 설계하고 구현하였으며, 카카오 연동 후 프로필 정보 바인딩 로직을 구현했습니다.
+            </p>
+        </section>
+    </div>
+
+<script>
+    //이미지 슬라이더 기능 
+
+    let slideIndex = []; 
+    
+    const sliderContainers = document.querySelectorAll('.slider-container');
+    sliderContainers.forEach((container, containerIndex) => {
+        slideIndex[containerIndex] = 1; 
+        
+        const slides = container.querySelectorAll('.slide');
+        const dots = container.querySelectorAll('.dot');
+        
+        showSlides(slideIndex[containerIndex], containerIndex);
+
+        dots.forEach((dot, dotIndex) => {
+            dot.addEventListener('click', () => {
+                currentSlide(dotIndex + 1, containerIndex); 
+            });
+        });
+    });
+
+    function getContainerIndex(element) {
+        let index = -1;
+        sliderContainers.forEach((container, i) => {
+            if (container === element) {
+                index = i;
+            }
+        });
+        return index;
+    }
+
+    function plusSlides(n, containerElement) {
+        const containerIndex = getContainerIndex(containerElement);
+        if (containerIndex !== -1) {
+            showSlides(slideIndex[containerIndex] += n, containerIndex);
+        }
+    }
+
+    function currentSlide(n, containerIndex) {
+        showSlides(slideIndex[containerIndex] = n, containerIndex);
+    }
+
+    function showSlides(n, containerIndex) {
+        const container = sliderContainers[containerIndex];
+        if (!container) return; 
+
+        const slides = container.querySelectorAll('.slide');
+        const dots = container.querySelectorAll('.dot');
+        
+        if (slides.length <= 1) return;
+        
+        if (n > slides.length) {slideIndex[containerIndex] = 1}
+        if (n < 1) {slideIndex[containerIndex] = slides.length}
+        
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[slideIndex[containerIndex] - 1].classList.add('active');
+        dots[slideIndex[containerIndex] - 1].classList.add('active');
+    }
+</script>
+
+</body>
+</html>
